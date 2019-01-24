@@ -1,5 +1,5 @@
-## Interface: 80000
-## Version: 1.1
+## Interface: 80100
+## Version: 1.2
 ## Title: Recrutement Euphorie
 ## Author: natinusala
 ## Notes: Addon de recrutement pour la guilde Euphorie

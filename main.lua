@@ -2,7 +2,7 @@
 local AceGUI = LibStub("AceGUI-3.0");
 
 -- Change this list to set the authorized characters
-authorityList = { "Sindalar", "Yheron", "Choupsï", "Lynandrel" }
+authorityList = { "Sindalar", "Gølbørg", "Zarakie", "Kharpett" }
 
 
 local function has_value (tab, val)
@@ -18,7 +18,7 @@ function RecrutementEuphorie:IsAuthority()
 	return has_value(authorityList, UnitName("player"));
 end
 
-RecrutementEuphorie_MACRO_NAME = "Recrut. Euphorïe";
+RecrutementEuphorie_MACRO_NAME = "Recrutement";
 
 RecrutementEuphorie_UPDATE_BROADCAST_PAYLOAD_PREFIX = "RE_U_PAYLOAD";
 RecrutementEuphorie_REQUEST_BROADCAST_PAYLOAD_PREFIX = "RE_R_PAYLOAD";
@@ -56,7 +56,7 @@ end
 function RecrutementEuphorie:On_REUPDATE()
 	if RecrutementEuphorie:IsAuthority() then
 		local frame = AceGUI:Create("Frame");
-		frame:SetTitle("Recrutement Euphorïe");
+		frame:SetTitle("Addon de Recrutement");
 		frame:SetLayout("List");
 		
 		local editbox = AceGUI:Create("MultiLineEditBox")
