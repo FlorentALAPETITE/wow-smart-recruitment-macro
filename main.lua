@@ -8,20 +8,10 @@
 )
 local AceGUI = LibStub("AceGUI-3.0")
 
--- Change this list to set the authorized characters
-authorityList = {"Sindalàr", "Gølbørg", "Zarakie", "Kharpett"}
-
-local function has_value(tab, val)
-    for index, value in ipairs(tab) do
-        if value == val then
-            return true
-        end
-    end
-    return false
-end
-
 function RecrutementEuphorie:IsAuthority()
-    return has_value(authorityList, UnitName("player"))
+    -- Player is authority and can update recruitment message if guild rank allows
+    -- to edit guild info.
+    return CanEditGuildInfo()
 end
 
 RecrutementEuphorie_MACRO_NAME = "Recrutement"
@@ -109,6 +99,8 @@ function RecrutementEuphorie:On_REUPDATE()
         )
 
         frame:AddChild(button)
+    else
+        RecrutementEuphorie:Print("Vous n'avez pas les droits pour modifier le message de recrutement.")
     end
 end
 

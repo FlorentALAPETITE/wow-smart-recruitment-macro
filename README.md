@@ -19,12 +19,13 @@ This allow authorities to update the message from a nice GUI, and it will spread
 
 The revision system now works with server timestamps which means that the last updated message will always be the message spread to other players (even with multiple authorities).
 
+**Update: Authority system was rework to be directly linked with guild permissions. Players will be considered as authorities and will be able to update the message if they have a guild rank that allows them to update the Guild Information panel.**
+
 ## Usage
 
-0. Edit the addon (`main.lua`, line 5) to change the authority name (one or more)
-1. Share the addon to all your players
-2. Upon installation, the addon will create a macro, click on it to post the message in your /2
-3. Authorities can now use `/reupdate` to open a GUI and update the current message
+0. Share the addon to all your players
+1. Upon installation, the addon will create a macro, click on it to post the message in your /2
+2. Authorities can now use `/reupdate` to open a GUI and update the current message
 
 ## Commands
 
