@@ -1,7 +1,7 @@
-## Interface: 80205
-## Version: 1.2
+## Interface: 90001
+## Version: 1.2.1
 ## Title: Recrutement Euphorie
-## Author: natinusala
+## Author: natinusala, Sindalar
 ## Notes: Addon de recrutement pour la guilde Euphorie
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
